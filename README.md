@@ -40,9 +40,9 @@ This project is a C++ application designed to interact with the Deribit API for 
 
 
 ## API Endpoints
--Authentication: POST /public/auth
--Place Order: POST /private/{action}
--Modify Order: POST /private/edit
--View Current Positions: GET /private/get_positions
--Cancel Order: POST /private/cancel
--Get Order Book: GET /public/get_order_book
+- Authentication: POST /public/auth 
+- Place Order: POST /private/{action}
+- Modify Order: POST /private/edit
+- View Current Positions: GET /private/get_positions
+- Cancel Order: POST /private/cancel
+- Get Order Book: GET /public/get_order_book
