@@ -38,10 +38,10 @@ extern std::string accessToken;
             curl_easy_cleanup(curl);
         }
 
-        json res = json::parse(readBuffer);
+        json response = json::parse(readBuffer);
         if (res.contains("result")) {
-            cout << "Authentication successful! Access Token: " << res["result"]["access_token"] << "\n";
-            accessToken = res["result"]["access_token"];
+            cout << "Authentication successful! Access Token: " << response["result"]["access_token"] << "\n";
+            accessToken = response["result"]["access_token"];
             return true;
         } else {
             cout<< "Authentication failed, please try again !!"<< endl;
